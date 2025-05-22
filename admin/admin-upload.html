@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>後台圖片上傳 - 萬興保安宮</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="file"], button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>📤 上傳輪播或活動圖片</h1>
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file">選擇圖片檔案（JPG、PNG、GIF）</label>
+    <input type="file" name="file" id="file" required accept="image/*">
+    <div class="note">建議尺寸：1200x600px（輪播）或 600x400px（活動相片）</div>
+    <button type="submit">開始上傳</button>
+  </form>
+</body>
+</html>
